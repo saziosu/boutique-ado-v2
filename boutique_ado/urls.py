@@ -24,5 +24,6 @@ urlpatterns = [
     path('', include('home.urls')),
     path('products/', include('products.urls')),
     path('bag/', include('bag.urls')),
+    path('checkout/', include('checkout.urls')),
     # allows django to see the media url
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
