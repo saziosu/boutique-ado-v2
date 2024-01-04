@@ -11,8 +11,6 @@ body {
 }
 
 /* from Bulma */
-/* bulma is another css framework
-makes sure FA icons remain centered */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -21,12 +19,10 @@ makes sure FA icons remain centered */
     width: 1.5rem;
 }
 
-/* forces the logo to uppercase */
 .logo-font {
     text-transform: uppercase;
 }
 
-/* makes sure it takes up the right amount of space the text requires and no more */
 .main-logo-link {
     width: fit-content;
 }
@@ -78,13 +74,13 @@ makes sure FA icons remain centered */
 }
 
 .overlay {
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    position: fixed;
-    background: white;
-    z-index: -1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: fixed;
+	background: white;
+	z-index: -1;
 }
 
 a.category-badge > span.badge:hover {
@@ -104,6 +100,10 @@ a.category-badge > span.badge:hover {
 .update-link,
 .remove-item {
     cursor: pointer;
+}
+
+input[name='q']::placeholder {
+    color: #aab7c4;
 }
 
 /* ------------------------------- bootstrap toasts */
@@ -178,9 +178,9 @@ a.category-badge > span.badge:hover {
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
-    .container {
-        max-width: 80%;
-    }
+  .container {
+    max-width: 80%;
+  }
 }
 
 /* Allauth form formatting */
@@ -251,7 +251,6 @@ a.category-badge > span.badge:hover {
         padding-top: 164px;
     }
 }
-
 
 /* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
