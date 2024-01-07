@@ -104,7 +104,7 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
-if 'DEVELOPMENT' in os.environ
+if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
     DEFAULT_FROM_EMAIL = 'boutiqueado@example.com'
 else:
